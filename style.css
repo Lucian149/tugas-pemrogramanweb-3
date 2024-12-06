@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: gray;
+}
+
+.wrapper {
+    width: 65vmin;
+    height: 70vmin;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 5px;
+    background: rgb(30, 1, 68);
+}
+
+.game-details {
+    color: gainsboro;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 20px 27px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play-board {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template: repeat(30, 1fr) / repeat(30, 1fr);
+    background: rgb(1, 15, 27);
+}
+
+.play-board .food {
+    background: red;
+}
+
+.play-board .head {
+    background: rgb(1, 184, 216);
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background: rgb(10, 20, 30);
+}
+
+.controls i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: whitesmoke;
+    cursor: pointer;
+    font-size: 1.3rem;
+    width: 25%; /* Simetris */
+    border-right: 1px solid black;
+}
+
+.controls i:last-child {
+    border-right: none; /* Hilangkan border pada elemen terakhir */
+}
